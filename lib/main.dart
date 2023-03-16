@@ -11,6 +11,7 @@ class MyXApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.red,
@@ -18,6 +19,9 @@ class MyXApp extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(
             title: Text("Cendekia"),
+            actions: <Widget>[
+              IconButton(onPressed: () {}, icon: Icon(Icons.mail))
+            ],
           ),
           body: SafeArea(child: Text("Flutter Pertama"))),
     );
