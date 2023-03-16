@@ -24,10 +24,17 @@ class MyXApp extends StatelessWidget {
             ],
           ),
           body: SafeArea(
-              child: Image(
-            image: AssetImage('assets/images/ic_cloud.png'),
-            height: 200,
-          ))),
+            child: Container(
+              child: Column(children: <Widget>[
+                Image(
+                  image: AssetImage('assets/images/ic_cloud.png'),
+                  height: 200,
+                ),
+                Text("Keep your data safe in cloud"),
+                Text("Try Now")
+              ]),
+            ),
+          )),
     );
   }
 }
