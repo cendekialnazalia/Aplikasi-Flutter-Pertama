@@ -25,6 +25,8 @@ class MyXApp extends StatelessWidget {
           ),
           body: SafeArea(
             child: Container(
+              // color: Colors.amber,
+              margin: EdgeInsets.only(left: 100, right: 100, top: 50),
               child: Column(children: <Widget>[
                 Image(
                   image: AssetImage('assets/images/ic_cloud.png'),
