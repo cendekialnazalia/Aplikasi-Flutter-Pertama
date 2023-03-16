@@ -23,7 +23,11 @@ class MyXApp extends StatelessWidget {
               IconButton(onPressed: () {}, icon: Icon(Icons.mail))
             ],
           ),
-          body: SafeArea(child: Text("Flutter Pertama"))),
+          body: SafeArea(
+              child: Image(
+            image: AssetImage('assets/images/ic_cloud.png'),
+            height: 200,
+          ))),
     );
   }
 }
